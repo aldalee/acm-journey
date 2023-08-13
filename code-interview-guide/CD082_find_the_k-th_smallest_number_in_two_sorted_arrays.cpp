@@ -49,16 +49,16 @@ int main() {
     ios::sync_with_stdio(false);
     int n, m, k;
     cin >> n >> m >> k;
-    vector<int> nums1;
-    vector<int> nums2;
+    vector<int> nums1(n);
+    vector<int> nums2(m);
     int x;
     for (int i = 0; i < n; ++i) {
         cin >> x;
-        nums1.push_back(x);
+        nums1[i] = x;
     }
     for (int i = 0; i < m; ++i) {
         cin >> x;
-        nums2.push_back(x);
+        nums2[i] = x;
     }
     cout << findKthNum(nums1, nums2, k);
     return 0;
