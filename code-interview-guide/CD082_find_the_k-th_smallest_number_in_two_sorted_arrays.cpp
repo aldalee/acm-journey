@@ -53,12 +53,10 @@ int main() {
     vector<int> nums2(m);
     int x;
     for (int i = 0; i < n; ++i) {
-        cin >> x;
-        nums1[i] = x;
+        cin >> nums1[i];
     }
     for (int i = 0; i < m; ++i) {
-        cin >> x;
-        nums2[i] = x;
+        cin >> nums2[i];
     }
     cout << findKthNum(nums1, nums2, k);
     return 0;
